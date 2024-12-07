@@ -1,5 +1,5 @@
 # Ex04 Places Around Me
-# Date:
+# Date: 19/10/2024
 # AIM
 To develop a website to display details about the places around my house.
 
@@ -23,7 +23,7 @@ Write HTML programs for all the regions identified.
 Execute the programs and publish them.
 
 # CODE:
-views.py
+### views.py
 ```
 from django.shortcuts import render
 def map(request):
@@ -37,7 +37,7 @@ def poorvika(request):
 def sarao(request):
     return render(request,'Saraogpt.html')
 ```
-urls.py
+### urls.py
 ```
 from django.contrib import admin
 from django.urls import path
@@ -52,7 +52,7 @@ urlpatterns = [
     path('HDFC_gpt.html',views.hdfc),
 ]
 ```
-settings.py
+### settings.py
 ```
 from pathlib import Path
 import os
@@ -139,7 +139,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ```
-Imagemap.html
+#Imagemap.html
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -266,7 +266,7 @@ Imagemap.html
 </body>
 </html>
 ```
-AB'sRestaurant.html
+### AB'sRestaurant.html
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -368,7 +368,7 @@ AB'sRestaurant.html
 </body>
 </html>
 ```
-HDFCbank.html
+### HDFCbank.html
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -472,7 +472,7 @@ HDFCbank.html
 </body>
 </html>
 ```
-Poorvikamobiles.html
+### Poorvikamobiles.html
 ```
 <!DOCTYPE html>
 <html lang="en">
